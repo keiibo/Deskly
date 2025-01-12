@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AB9290EB1C9C029E13DFBEB /* Pods_Deskly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18007E8ACDE545E164C2269 /* Pods_Deskly.framework */; };
+		959B3E70F394C6ED77594A31 /* Pods_DesklyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D755A93963E4985C23614C3 /* Pods_DesklyTests.framework */; };
+		EE84DAC25161250CF60AA9A6 /* Pods_Deskly_DesklyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C059DF22A706578F8E2175 /* Pods_Deskly_DesklyUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		23DF93E42D336B1A00076E2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0745BD5518BDA705D2EC3EC7 /* Pods-Deskly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly.debug.xcconfig"; path = "Target Support Files/Pods-Deskly/Pods-Deskly.debug.xcconfig"; sourceTree = "<group>"; };
+		1858CEC390B4E44906EB1E9A /* Pods-DesklyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyTests.release.xcconfig"; path = "Target Support Files/Pods-DesklyTests/Pods-DesklyTests.release.xcconfig"; sourceTree = "<group>"; };
 		23DF93D22D336B1800076E2F /* Deskly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DF93E32D336B1A00076E2F /* DesklyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesklyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DF93ED2D336B1A00076E2F /* DesklyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesklyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AD16DE557B550746E5F39CF /* Pods-Deskly-DesklyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly-DesklyUITests.release.xcconfig"; path = "Target Support Files/Pods-Deskly-DesklyUITests/Pods-Deskly-DesklyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55D787409EEC811D3E66649C /* Pods-Deskly-DesklyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly-DesklyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Deskly-DesklyUITests/Pods-Deskly-DesklyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D755A93963E4985C23614C3 /* Pods_DesklyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesklyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C059DF22A706578F8E2175 /* Pods_Deskly_DesklyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskly_DesklyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC5AF5A0CE5772160439238 /* Pods-DesklyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesklyTests.debug.xcconfig"; path = "Target Support Files/Pods-DesklyTests/Pods-DesklyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A18007E8ACDE545E164C2269 /* Pods_Deskly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C6E7B70ED194E4D51E2FC7 /* Pods-Deskly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskly.release.xcconfig"; path = "Target Support Files/Pods-Deskly/Pods-Deskly.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB9290EB1C9C029E13DFBEB /* Pods_Deskly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959B3E70F394C6ED77594A31 /* Pods_DesklyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE84DAC25161250CF60AA9A6 /* Pods_Deskly_DesklyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,8 @@
 				23DF93E62D336B1A00076E2F /* DesklyTests */,
 				23DF93F02D336B1A00076E2F /* DesklyUITests */,
 				23DF93D32D336B1800076E2F /* Products */,
+				B3CDE91827C47D406D1AB425 /* Pods */,
+				EFAB0BE37ECC2DAC9AC41ABC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +112,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B3CDE91827C47D406D1AB425 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0745BD5518BDA705D2EC3EC7 /* Pods-Deskly.debug.xcconfig */,
+				D8C6E7B70ED194E4D51E2FC7 /* Pods-Deskly.release.xcconfig */,
+				55D787409EEC811D3E66649C /* Pods-Deskly-DesklyUITests.debug.xcconfig */,
+				4AD16DE557B550746E5F39CF /* Pods-Deskly-DesklyUITests.release.xcconfig */,
+				9BC5AF5A0CE5772160439238 /* Pods-DesklyTests.debug.xcconfig */,
+				1858CEC390B4E44906EB1E9A /* Pods-DesklyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFAB0BE37ECC2DAC9AC41ABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18007E8ACDE545E164C2269 /* Pods_Deskly.framework */,
+				80C059DF22A706578F8E2175 /* Pods_Deskly_DesklyUITests.framework */,
+				7D755A93963E4985C23614C3 /* Pods_DesklyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DF93F72D336B1A00076E2F /* Build configuration list for PBXNativeTarget "Deskly" */;
 			buildPhases = (
+				467E17D5513DF3BFE44A5A91 /* [CP] Check Pods Manifest.lock */,
 				23DF93CE2D336B1800076E2F /* Sources */,
 				23DF93CF2D336B1800076E2F /* Frameworks */,
 				23DF93D02D336B1800076E2F /* Resources */,
+				3D559566A4C8AA6BBE5AA1FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +156,6 @@
 				23DF93D42D336B1800076E2F /* Deskly */,
 			);
 			name = Deskly;
-			packageProductDependencies = (
-			);
 			productName = Deskly;
 			productReference = 23DF93D22D336B1800076E2F /* Deskly.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DF93FA2D336B1A00076E2F /* Build configuration list for PBXNativeTarget "DesklyTests" */;
 			buildPhases = (
+				317E1EFD084AE69A2E35C693 /* [CP] Check Pods Manifest.lock */,
 				23DF93DF2D336B1A00076E2F /* Sources */,
 				23DF93E02D336B1A00076E2F /* Frameworks */,
 				23DF93E12D336B1A00076E2F /* Resources */,
@@ -134,8 +178,6 @@
 				23DF93E62D336B1A00076E2F /* DesklyTests */,
 			);
 			name = DesklyTests;
-			packageProductDependencies = (
-			);
 			productName = DesklyTests;
 			productReference = 23DF93E32D336B1A00076E2F /* DesklyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DF93FD2D336B1A00076E2F /* Build configuration list for PBXNativeTarget "DesklyUITests" */;
 			buildPhases = (
+				CB0A48B9481C48E294C5DF3A /* [CP] Check Pods Manifest.lock */,
 				23DF93E92D336B1A00076E2F /* Sources */,
 				23DF93EA2D336B1A00076E2F /* Frameworks */,
 				23DF93EB2D336B1A00076E2F /* Resources */,
+				79E605DA4B2249F4515E37C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,8 +201,6 @@
 				23DF93F02D336B1A00076E2F /* DesklyUITests */,
 			);
 			name = DesklyUITests;
-			packageProductDependencies = (
-			);
 			productName = DesklyUITests;
 			productReference = 23DF93ED2D336B1A00076E2F /* DesklyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +272,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		317E1EFD084AE69A2E35C693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesklyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D559566A4C8AA6BBE5AA1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deskly/Pods-Deskly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deskly/Pods-Deskly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deskly/Pods-Deskly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		467E17D5513DF3BFE44A5A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deskly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E605DA4B2249F4515E37C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deskly-DesklyUITests/Pods-Deskly-DesklyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deskly-DesklyUITests/Pods-Deskly-DesklyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deskly-DesklyUITests/Pods-Deskly-DesklyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0A48B9481C48E294C5DF3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deskly-DesklyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23DF93CE2D336B1800076E2F /* Sources */ = {
@@ -385,6 +530,7 @@
 		};
 		23DF93F82D336B1A00076E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0745BD5518BDA705D2EC3EC7 /* Pods-Deskly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,16 +560,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keibo.Deskly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
 		23DF93F92D336B1A00076E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C6E7B70ED194E4D51E2FC7 /* Pods-Deskly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,16 +601,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keibo.Deskly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
 		23DF93FB2D336B1A00076E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC5AF5A0CE5772160439238 /* Pods-DesklyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +636,7 @@
 		};
 		23DF93FC2D336B1A00076E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1858CEC390B4E44906EB1E9A /* Pods-DesklyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +660,7 @@
 		};
 		23DF93FE2D336B1A00076E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D787409EEC811D3E66649C /* Pods-Deskly-DesklyUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -531,6 +683,7 @@
 		};
 		23DF93FF2D336B1A00076E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD16DE557B550746E5F39CF /* Pods-Deskly-DesklyUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
