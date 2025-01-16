@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Deskly
-//
-//  Created by Keita Kobayashi on 2025/01/12.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -14,6 +7,7 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Input(type: .text, placeholder: "メールアドレス", text: .constant(""))
         }
         .padding()
     }

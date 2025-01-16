@@ -12,6 +12,8 @@ struct DesklyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.font, Font.custom("Roboto-Bold", size: 16))
+
         }
     }
 }
