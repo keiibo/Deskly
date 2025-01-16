@@ -4,6 +4,7 @@ struct Input: View {
     enum InputType {
         case text
         case password
+        case textarea
     }
     
     var type: InputType
@@ -15,44 +16,55 @@ struct Input: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             ZStack(alignment: .leading) {
-                 if text.isEmpty {
-                     HStack {
-                         if let icon = icon {
-                             Image(systemName: icon)
-                                 .foregroundColor(Colors.white)
-                         }
-                         Text(placeholder)
-                             .foregroundColor(Colors.darkWhite)
-                     }
-                 }
-                 HStack {
-                     if let icon = icon {
-                         Image(systemName: icon)
-                             .foregroundColor(Colors.white)
-                     }
-                     if type == .password {
-                         SecureField("", text: $text)
-                             .foregroundColor(Colors.black)
-                             .autocapitalization(.none)
-                     } else {
-                         TextField("", text: $text)
-                             .foregroundColor(Colors.black)
-                             .autocapitalization(.none)
-                     }
-                 }
+                // プレースホルダー
+                if text.isEmpty && type != .textarea {
+                    HStack {
+                        if let icon = icon {
+                            Image(systemName: icon)
+                                .foregroundColor(Colors.white)
+                        }
+                        Text(placeholder)
+                            .foregroundColor(Colors.darkWhite)
+                    }
+                }
+                
+                // 入力フィールド
+                if type == .textarea {
+                    TextField("", text: $text)
+                        .foregroundColor(Colors.black)
+                        .autocapitalization(.none)
+                        .frame(minHeight: 100)
+                } else {
+                    HStack {
+                        if let icon = icon {
+                            Image(systemName: icon)
+                                .foregroundColor(Colors.white)
+                        }
+                        if type == .password {
+                            SecureField("", text: $text)
+                                .foregroundColor(Colors.black)
+                                .autocapitalization(.none)
+                        } else {
+                            TextField("", text: $text)
+                                .foregroundColor(Colors.black)
+                                .autocapitalization(.none)
+                        }
+                    }
+                }
             }
-            // 高さ32
+            // テキスト入力時のデザイン
             .padding()
             .background(
-                RoundedRectangle(cornerRadius: 32)
+                RoundedRectangle(cornerRadius: 16)
                     .stroke(errorMessage == nil ? Colors.primary : Colors.red, lineWidth: errorMessage == nil ? 0 : 1)
                     .background(
-                        RoundedRectangle(cornerRadius: 32)
+                        RoundedRectangle(cornerRadius: 16)
                             .fill(Colors.primary30a)
                     )
             )
             .foregroundColor(Colors.black)
             
+            // エラーメッセージ
             if let error = errorMessage, !error.isEmpty {
                 Text(error)
                     .font(.footnote)
@@ -62,22 +74,24 @@ struct Input: View {
     }
 }
 
-
 // Preview
 struct InputComponent_Previews: PreviewProvider {
     static var previews: some View {
-        VStack  {
+        VStack(spacing: 20) {
+            // シンプルなテキスト入力
             Input(type: .text, placeholder: "メールアドレス", text: .constant(""))
-                .padding()
+            
+            // パスワード入力
             Input(type: .password, placeholder: "パスワード", text: .constant(""))
-                .padding()
-            // アイコン
-            Input(type: .text, placeholder: "メールアドレス", icon: "envelope", text: .constant(""))
-                .padding()
-            // エラー
+            
+            // テキストエリア（複数行）
+            Input(type: .textarea, placeholder: "詳細を入力してください", text: .constant("複数行の入力テキスト"))
+            
+            // エラーメッセージ付き
             Input(type: .text, placeholder: "メールアドレス", text: .constant(""), errorMessage: "メールアドレスを入力してください")
-                .padding()
         }
-     
+        .padding()
+        .background(Colors.white)
+        .previewLayout(.sizeThatFits)
     }
 }

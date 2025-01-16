@@ -23,4 +23,7 @@ struct Colors {
     
     // White
     static let white = Color("White")
+    
+    // shadow
+    static let shadow = Color("Shadow")
 }
